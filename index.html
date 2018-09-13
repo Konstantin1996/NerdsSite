@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Магазин готовых шаблонов «nёrd's»</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normilize.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="color-wrapper">
+			<div class="container">
+				<nav class="main-navigation">
+					<a class="main-header-logo"><img src="images/nerds-logo.png" alt="Логотип магазина «nёrd's»" class="header-logo" width="160" height="65"></a>
+					<ul class="site-navigation-list">
+						<li class="studio"><a href="#">Студия</a></li>
+						<li class="clients"><a href="#">Клиенты</a></li>
+						<li class="shop site-navigation-current"><a>Магазин</a></li>
+						<li class="contacts"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="user-navigation-list">
+						<li class="user-navigation-current"><a href="basket">Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="color-wrapper">
+			<div class="container">
+				<section id="window" class="modal modal-feedback">
+								<h2 class="visually-hidden">Обратная связь</h2>
+									<p class="modal-feedback-us">Напишите нам</p>
+									<button id="closer" onclick="closeWindow()" class="modal-close">Закрыть</button>
+									<form action="#" class="form-feedback">
+
+										<div class="modal-field-wrapper-1">
+											<p>
+												<label class="feedback-label" for="feedback-name">Ваше имя:</label>
+												<input id="feedback-name" name="feedback-name" type="text" pattern="^[a-zA-Z]+$"  placeholder="Представьтесь, пожалуйста">
+											</p>
+											<p>
+												<label class="feedback-label" for="feedback-email">Ваш e-mail:</label>
+												<input id="feedback-email" name="feedback-email" type="text" pattern="^[a-zA-Z]+$" value="" placeholder="Для отправки ответа">
+											</p>
+										</div>
+
+										<div class="modal-field-wrapper-2">
+											<p>
+												<label class="feedback-label" for="feedback-message">Текст письма:</label>
+												<textarea id="feedback-message" name="feedback-message" cols="30" rows="10" pattern="^[a-zA-Z]+$" placeholder="В свободной форме"></textarea>
+											</p>
+										</div>
+
+										<input class="btn modal-form-btn" type="submit" value="Отправить">
+									</form>
+					</section>
+
+					<h1 class="visually-hidden">Магазин готовых шаблонов «nёrd's»</h1>
+
+					<section class="features-slider">
+						<div class="features-wrapper-container">
+							<h2 class="visually-hidden">Преимущества</h2>
+
+							<input type="radio" name="toogle" id="btn-slider-1" class="btn-slider" checked>
+							<input type="radio" name="toogle" id="btn-slider-2" class="btn-slider" >
+							<input type="radio" name="toogle" id="btn-slider-3" class="btn-slider" >
+
+					        <div class="slider-controls">
+					          <label for="btn-slider-1"></label>
+					          <label for="btn-slider-2"></label>
+					          <label for="btn-slider-3"></label>
+					        </div>
+
+							<ul class="features-list">
+								<div class="slide">
+									<li class="features-item">
+										<b class="features-slogan">Долго, дорого, скурпулезно.</b>
+										<p class="features-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+										<a class="btn features-btn" href="#">Узнать больше</a>
+									</li>
+								</div>
+
+								<div class="slide">
+									<li class="features-item">
+										<b class="features-slogan">Любим математику как никто другой</b>
+										<p class="features-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+										<a class="btn features-btn" href="#">Узнать больше</a>
+									</li>
+								</div>
+
+								<div class="slide">
+									<li class="features-item">
+										<b class="features-slogan">Только ночь, только хардкор</b>
+										<p class="features-description">Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+										<a class="btn features-btn" href="#">Узнать больше</a>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</section>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<section class="products">
+				<h2 class="visually-hidden">Услуги</h2>
+				<div class="products-wrapper">
+					<div class="products-catalog">
+						<div class="product-item">
+							<h3 class="product-category">Мобильные</h3>
+							<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+							<a class="btn btn-order-1" href="#">Заказать</a>
+						</div>
+
+						<div class="product-item">
+							<h3 class="product-category">Веб-сайты</h3>
+							<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+							<a class="btn btn-order-1" href="#">Заказать</a>
+						</div>
+
+						<div class="product-item">
+							<h3 class="product-category">Приложения</h3>
+							<p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+							<a class="btn btn-order-2" href="#">Заказать</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<div class="info-statistics-wrapper">
+				<div class="company-info-wrapper">
+					<section class="company-info">
+							<h2 class="visually-hidden">О компании</h2>
+							<b class="company-description">Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
+							<p class="company-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+
+							<p><b class="company-work-goals">Выполняем заказы на разработку:</b></p>
+							<ul class="company-work-list">
+								<li class="work-item"><p>Веб-сайтов любой сложности</p></li>
+								<li class="work-item"><p>Мобильных приложений для OS и Android</p></li>
+								<li class="work-item"><p>Слайдшоу и видео для корпоративных презентаций</p></li>
+							</ul>
+					</section>
+				</div>
+
+				<div class="statistics-wrapper">
+					<section class="statistics">
+							<h2 class="visually-hidden">Статистика компании</h2>
+							<!-- Контентное изображение -->
+							<img src="images/nerds-illustration.jpg" alt="Логотип компании">
+							<p class="statistics-slogan">С 2004 года любим точность во всём:</p>
+
+							<table class="statistics-table">
+								<tr>
+									<th class="statistics-number">146<span class="statistics-percent">%</span></th>
+									<th class="statistics-number">100<span class="statistics-percent">%</span></th>
+									<th class="statistics-number">50<span class="statistics-percent">%</span></th>
+								</tr>
+								<tr>
+									<td class="statistics-category">Уровень самоотдачи</td>
+									<td class="statistics-category">Соблюдение сроков</td>
+									<td class="statistics-category">Минимальная предоплата</td>
+								</tr>
+							</table>
+					</section>
+				</div>
+			</div>
+
+			<section class="сolleagues">
+				<h2 class="visually-hidden">Наши коллеги</h2>
+				<div class="colleagues-wrapper">
+					<ul class="colleagues-list">
+						<li class="colleague-logo html-academy"><img src="images/content/1.png" alt="html academy"></li>
+						<li class="colleague-logo borbershop"><img src="images/content/2.png" alt="Borbershop «Borodinski»"></li>
+						<li class="colleague-logo pink"><img src="images/content/3.png" alt="«Pink»"></li>
+						<li class="colleague-logo mishka"><img src="images/content/4.png" alt="«Mishka»"></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<div class="container">
+
+		<footer class="footer-top">
+				<div class="contact-info">
+					<h2 class="visually-hidden">Контактная информация</h2>
+					<p><b class="contact-company-name">Nёrds design studio</b></p>
+					<p class="contact-data contact-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+
+					<p class="contact-data contact-mobile">тел. +7(812) 275-75-75</p>
+					<a class="btn contact-btn" href="#">Напишите нам</a>
+				</div>
+
+				<h2 class="visually-hidden">Как до нас добраться</h2>
+
+				<div class="map-info">
+					<img class="map" src="images/map.png" alt="Местоположение магазина" width="1440" height="416">
+				</div>
+		</footer>
+
+		<footer class="footer-bottom">
+				<h2 class="visually-hidden">Ссылки и прочая информация</h2>
+				<ul class="social-list">
+					<li><a class="social-btn social-vk" href="#">
+							<span class="visually-hidden">Вконтакте</span>
+							<svg class="vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="15" viewBox="0 0 26 15">
+							  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							      <rdf:Description rdf:about=""/>
+							   </rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+							<image id="vk-icon" width="26" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAQAAABQWBdtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAsALQ+zqE/5AAABF0lEQVQoz42QIUuDYRSFn09YEUEGgggyMGgWhoJFJyqIYDAbRLAMTCaT2WITtKnBPsEfoBYxCKYFy5qKQaa4wcbmY9j2+e4Lc6edw33Ofe8bucw4ADWuoio4xRkzpIAGD6xFXwBGLDEEwCBvWLGjEwCHPfBP8wDgRpDV8Tg2FUdarb7HWa4N3QbQJWasx/awPfLUDZkLkKoTgKfBrkwCyoID3gdQvtUb7ioAWIz9NLgbIAUj2s85CptM+R27dbNWY1cyTUemg9ObPgYVL8Hv/jhHKLf8X890y8jrPrCdJDbqax9YPonNBid39OGFzd7bFv1MQPvgZlfScCGJTXrXNbIK4F7PDwFwxXOLli1bcqydbccX17z5Bb45CoW7amS6AAAAAElFTkSuQmCC"/>
+							</svg>
+						</a>
+					</li>
+					<li><a class="social-btn social-facebook" href="#">
+							<span class="visually-hidden">Фейсбук</span>
+							<svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
+							  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							      <rdf:Description rdf:about=""/>
+							   </rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+							<image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAsAICXdvfhiAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="social-btn social-instagram" href="#">
+							<span class="visually-hidden">Инстаграмм</span>
+							<svg class="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+							  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							      <rdf:Description rdf:about=""/>
+							   </rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+							<image id="insta-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAsALQLNGTNEAAAAz0lEQVQoz6WTPW7CQBBG31oIRVTmBEnFEcwVfEl3FgdwAZdCGCqnykvhfwPWRplmVvM9zc/uLO4sbFy3xsIdFsZZEWz4IMa+g67IXzwAqAE2q5ke4Q7QZkuiiv8fvXBkz5ELULfDd8riSs6GLh48z6Ue/fSqajamN1P1ajpH095P0D6WdG5QagAOk67bcx1+5r2mVm96rXpmRPNhsMzUbBgqf0LB8sWSlGPlKbp9gku3L1EAcytv6s3KnNk8C7STFm/YIn/Y14RT5LaciP9bv6UMlLD8vPvAAAAAAElFTkSuQmCC"/>
+							</svg>
+						</a>
+					</li>
+
+				</ul>
+
+				<div class="footer-slogan-info-wrapper">
+					<b class="footer-slogan">Давайте дружить, это выгодно!</b>
+					<p class="footer-info">Скидка 10% для друзей из социальных сетей</p>
+				</div>
+		</footer>
+	</div>
+
+	<script src="js.js"></script>
+</body>
+
+
+</html>
